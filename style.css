@@ -1,0 +1,182 @@
+.video{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    object-fit: cover;
+    z-index: -1;
+    width: 1400px;
+    height: 636px;
+}
+.body{
+    margin: 0;
+    overflow: hidden;
+
+}
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nexus{
+    font-size: 25px;
+
+}
+.robot{
+    font-size: 25px;
+}
+.heading{
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    font-size: 50px;
+}
+.welcome{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 19px;
+    border-style: outset;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(10, 93, 196, 0.5);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.description{
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    font-size: 19px;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background:linear-gradient( violet, blue);
+    position: absolute;
+    top: 350px;
+    left: 50px;
+
+}
+.bu{
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    background: linear-gradient(rgb(228, 210, 107),rgb(97, 248, 97));
+ 
+}
+.home{
+    position: absolute;
+    left: 500px;
+    top: 10px;
+}
+.about{
+    position: absolute;
+    left: 600px;
+    top: 10px;
+}
+.Features{
+    position: absolute;
+    left:700px ;
+    top: 10px;
+}
+.pricing{
+    position:absolute;
+    left: 800px;
+    top: 10px;
+}
+.contact{
+    position: absolute;
+    left: 900px;
+    top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.game-slider{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 160px;
+}
+.game-track{
+    display: flex;
+    position: absolute;
+    top: 465px;
+    left: 10px;
+    gap: -10px;
+    animation: moveGames 15s linear infinite;
+}
+.game-card{
+    width: 265px;
+    height: 160px;
+    flex-shrink: 0;
+    opacity: 0.35;
+    transform: scale(0.9);
+    transition: 0.4s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.game-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.game-card.active{
+    opacity: 1;
+    transform: scale(1.05);
+}
+@keyframes moveGames{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
+.trending{
+    position: absolute;
+    top: 420px;
+    left:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: trendingGlow 2s ease-in-out infinite;
+    font-size: 25px;
+}
+@keyframes trendingGlow{
+    0%{
+        opacity: 0.6;
+        transform: translateY(5px);
+        text-shadow: 0 0 5px #dfff00;
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0 0 20px #dfff00;
+    }
+    100%{
+        opacity: 0.6;
+        transform: translateY(5px);
+        text-shadow: 0 0 5px #dfff00;
+    }
+}
