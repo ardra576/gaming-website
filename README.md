@@ -20,8 +20,8 @@ Nexus is a modern gaming showcase landing page designed to display popular and t
 
 ## 📂 Project Structure  
 
-Nexus/  
-│
+Nexus/    
+│  
 ├── index.html  
 ├── style.css  
 ├── script.js  
